@@ -55,7 +55,7 @@ function dlVid()
 var a = document.createElement('a');
 a.href = jQuery("video").attr("src");
 var currTitle = jQuery("ul.clips > li.selected").find("h3").text().trim();
-var currMod = jQuery("header.active").find("h2").text().trim();
+var currMod = jQuery("header.active-module").find("h2").text().trim();
 a.download = currTitle;
 
 console.log(counter + " – " + currMod + " – " + currTitle);
